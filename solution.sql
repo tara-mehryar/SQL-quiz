@@ -177,4 +177,6 @@ WHERE customer_id = (
 -- Write a query that shows the total amount of revenue that comes
 -- from internet orders.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT SUM (order_total)
+FROM orders
+WHERE salesperson_id IS NULL;

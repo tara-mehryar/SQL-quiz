@@ -2,25 +2,32 @@
 -- Task: Write a query that shows all the information about all the salespeople
 -- in the database. Use a basic select query.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT *
+FROM salespeople;
 
 -- Problem 2:
 -- Task: Write a query that shows all the information about all salespeople
 -- from the 'Northwest' region.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT *
+FROM salespeople
+WHERE region = 'Northwest';
 
 -- Problem 3:
 -- Task: Write a query that shows just the emails of the salespeople from
 -- the 'Southwest' region.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT email
+FROM salespeople
+WHERE region = 'Southwest';
 
 -- Problem 4:
 -- Task: Write a query that shows the given name, surname, and email of all
 -- salespeople in the 'Northwest' region.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT first_name, last_name, email
+FROM salespeople
+where region = 'Northwest';
 
 -- Problem 5:
 -- Task: Write a query that shows the common name of melons that cost more

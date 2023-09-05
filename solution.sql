@@ -98,14 +98,19 @@ WHERE region IN ('Northwest', 'Southwest');
 -- all salespeople in either the Northwest or Southwest regions whose
 -- surnames start with the letter 'M'.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT email, first_name, last_name
+FROM salespeople
+WHERE region IN ('Northwest', 'Southwest')
+AND last_name LIKE 'M%';
+
 
 -- Problem 13:
 -- Task: Write a query that shows the melon type, common name, price, and
 -- the price of the melon given in euros. The 'melons' table has prices in
 -- dollars, and the dollar to euro conversion rate is 0.73.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT melon_type, common_name, price, (price*0.73)
+FROM melons;
 
 -- Problem 14:
 -- Task: Write a query that shows the total number of customers in our

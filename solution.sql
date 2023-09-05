@@ -116,19 +116,23 @@ FROM melons;
 -- Task: Write a query that shows the total number of customers in our
 -- customer table.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT COUNT (*)
+FROM customers;
 
 -- Problem 15:
 -- Task: Write a query that counts the number of orders shipped to
 -- California.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT COUNT (*)
+FROM orders
+WHERE shipto_state = 'CA';
 
 -- Problem 16:
 -- Task: Write a query that shows the total amount of money spent
 -- across all melon orders.
 
--- REPLACE THIS WITH YOUR QUERY
+SELECT SUM (order_total)
+FROM orders;
 
 -- Problem 17:
 -- Task: Write a query that shows the average order cost.
